@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         } else {
             let name = NameTextField.text ?? ""
             let classYr = ClassTextField.text ?? ""
-            DisplayLabel.text = " Welcome, " + name + " of " + classYr + "!"
+            DisplayLabel.text = " Hello, " + name + " of " + classYr + "!"
             NameTextField.text = ""
             ClassTextField.text = ""
             UserDefaults.standard.set(name, forKey: "name")
@@ -68,13 +68,17 @@ class ViewController: UIViewController {
         if (UserDefaults.standard.object(forKey: "name") != nil) {
             let name = UserDefaults.standard.string(forKey: "name")
             let classYr = UserDefaults.standard.string(forKey: "class")
-            DisplayLabel.text = " Welcome, " + name! + " of " + classYr! + "!"
+            DisplayLabel.text = " Welcome Back, " + name! + " of " + classYr! + "!"
             enterClearMode()
         } else {
             enterSubmitMode()
         }
-        
+        if (Cat.count == 0) {
+            Cat.addCat(name: "Sleepy", age: 1, image: #imageLiteral(resourceName: "4"), type: "Tabby")
+            Cat.addCat(name: "Tiger", age: 2, image: #imageLiteral(resourceName: "3"), type: "Tiger Cat")
         }
+        }
+    
         // Do any additional setup after loading the view, typically from a nib.
     
 }

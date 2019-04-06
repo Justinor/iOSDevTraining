@@ -14,6 +14,10 @@
 		31A3F35222333CAC0064BD26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A3F35022333CAC0064BD26 /* LaunchScreen.storyboard */; };
 		31A3F35D22333CAC0064BD26 /* Toy2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A3F35C22333CAC0064BD26 /* Toy2Tests.swift */; };
 		31A3F36822333CAC0064BD26 /* Toy2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A3F36722333CAC0064BD26 /* Toy2UITests.swift */; };
+		31ED28542251531500D82B72 /* CatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED28532251531500D82B72 /* CatTableViewController.swift */; };
+		31ED2856225153A500D82B72 /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED2855225153A500D82B72 /* CatTableViewCell.swift */; };
+		31ED28592251655D00D82B72 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED28582251655D00D82B72 /* Cat.swift */; };
+		31ED285B2251A2E800D82B72 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED285A2251A2E800D82B72 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		31A3F36322333CAC0064BD26 /* Toy2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Toy2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A3F36722333CAC0064BD26 /* Toy2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy2UITests.swift; sourceTree = "<group>"; };
 		31A3F36922333CAC0064BD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31ED28532251531500D82B72 /* CatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewController.swift; sourceTree = "<group>"; };
+		31ED2855225153A500D82B72 /* CatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
+		31ED28582251655D00D82B72 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		31ED285A2251A2E800D82B72 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			children = (
 				31A3F34722333CA80064BD26 /* AppDelegate.swift */,
 				31A3F34922333CA80064BD26 /* ViewController.swift */,
+				31ED28532251531500D82B72 /* CatTableViewController.swift */,
+				31ED285A2251A2E800D82B72 /* DetailViewController.swift */,
+				31ED2855225153A500D82B72 /* CatTableViewCell.swift */,
+				31ED2857225163A000D82B72 /* Models */,
 				31A3F34B22333CA80064BD26 /* Main.storyboard */,
 				31A3F34E22333CAC0064BD26 /* Assets.xcassets */,
 				31A3F35022333CAC0064BD26 /* LaunchScreen.storyboard */,
@@ -123,6 +135,14 @@
 				31A3F36922333CAC0064BD26 /* Info.plist */,
 			);
 			path = Toy2UITests;
+			sourceTree = "<group>";
+		};
+		31ED2857225163A000D82B72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31ED28582251655D00D82B72 /* Cat.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31ED2856225153A500D82B72 /* CatTableViewCell.swift in Sources */,
 				31A3F34A22333CA80064BD26 /* ViewController.swift in Sources */,
+				31ED28592251655D00D82B72 /* Cat.swift in Sources */,
+				31ED285B2251A2E800D82B72 /* DetailViewController.swift in Sources */,
+				31ED28542251531500D82B72 /* CatTableViewController.swift in Sources */,
 				31A3F34822333CA80064BD26 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
