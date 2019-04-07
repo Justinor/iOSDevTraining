@@ -74,8 +74,13 @@ class ViewController: UIViewController {
             enterSubmitMode()
         }
         if (Cat.count == 0) {
-            Cat.addCat(name: "Sleepy", age: 1, image: #imageLiteral(resourceName: "4"), type: "Tabby")
-            Cat.addCat(name: "Tiger", age: 2, image: #imageLiteral(resourceName: "3"), type: "Tiger Cat")
+            Cat.loadCats { (result) in
+                for dict in result {
+                    let imageURL = URL(string:dict["image"]!)
+                    let image = UIImage(data: try! Data(contentsOf: imageURL!))
+                    Cat.addCat(name: dict["name"]!, age: Int(dict["age"]!), image: image!, type: dict["type"]!)
+                }
+            }
         }
         }
     
